@@ -34,11 +34,11 @@ body {
 }
 
 .scrollbar::-webkit-scrollbar {
-  @apply h-2 w-2;
+  @apply h-2 w-2 bg-transparent;
 }
 
-.scrollbar::-webkit-scrollbar-track {
-  @apply bg-[#f1f1f1];
+.scrollbar::-webkit-scrollbar-track-piece {
+  @apply hidden bg-transparent;
 }
 
 .scrollbar::-webkit-scrollbar-thumb {

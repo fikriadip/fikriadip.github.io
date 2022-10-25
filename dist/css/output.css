@@ -1329,11 +1329,12 @@ body {
 .scrollbar::-webkit-scrollbar {
   height: 0.5rem;
   width: 0.5rem;
+  background-color: transparent;
 }
 
-.scrollbar::-webkit-scrollbar-track {
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 241 241 / var(--tw-bg-opacity));
+.scrollbar::-webkit-scrollbar-track-piece {
+  display: none;
+  background-color: transparent;
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
