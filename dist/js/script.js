@@ -33,12 +33,12 @@ window.addEventListener("click", (e) => {
 });
 
 // Add active description in portfolio projects
-$("#projects a").on("mouseover", function () {
+$("#projects span").on("mouseover", function () {
   $(this).find(".description").removeClass("opacity-0");
   $(this).find(".description").addClass("description-active");
 });
 
-$("#projects a").on("mouseout", function () {
+$("#projects span").on("mouseout", function () {
   $(this).find(".description").addClass("opacity-0");
   $(this).find(".description").removeClass("description-active");
 });

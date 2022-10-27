@@ -1643,6 +1643,22 @@ body {
     height: 250px;
   }
 
+  .lg\:h-\[220px\] {
+    height: 220px;
+  }
+
+  .lg\:h-\[215px\] {
+    height: 215px;
+  }
+
+  .lg\:h-\[225px\] {
+    height: 225px;
+  }
+
+  .lg\:h-\[230px\] {
+    height: 230px;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
