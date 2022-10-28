@@ -1,4 +1,7 @@
 {
+  "name": "muhammad-fikri-adi-prasetyo",
+  "license": "MIT",
+  "author": "Muhammad Fikri <fikri.adie04@gmail.com>",
   "devDependencies": {
     "tailwindcss": "^3.1.8"
   },
