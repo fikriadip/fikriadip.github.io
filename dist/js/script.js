@@ -1,4 +1,6 @@
-// Navbar Fixed
+/**
+ * Navbar fixed
+ */
 window.onscroll = () => {
   const header = document.querySelector("header");
   const fixedNav = header.offsetTop;
@@ -15,7 +17,9 @@ window.onscroll = () => {
   }
 };
 
-// Hamburger Menu
+/**
+ * Hamburger Menu
+ */
 const hamburger = document.querySelector("#hamburger-menu");
 const navMenu = document.querySelector("#nav-menu");
 
@@ -24,7 +28,9 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("hidden");
 });
 
-// Nav mobile click outside hamburger
+/**
+ * Nav mobile click outside hamburger
+ */
 window.addEventListener("click", (e) => {
   if (e.target != hamburger && e.target != navMenu) {
     hamburger.classList.remove("hamburger-active");
@@ -32,7 +38,9 @@ window.addEventListener("click", (e) => {
   }
 });
 
-// Add active description in portfolio projects
+/**
+ * Add active description in portfolio projects
+ */
 $("#projects span").on("mouseover", function () {
   $(this).find(".description").removeClass("opacity-0");
   $(this).find(".description").addClass("description-active");
@@ -43,7 +51,9 @@ $("#projects span").on("mouseout", function () {
   $(this).find(".description").removeClass("description-active");
 });
 
-// Dark mode Toggle
+/**
+ * Dark Mode toggle
+ */
 const darkToggle = document.querySelector("#dark-toggle");
 const html = document.querySelector("html");
 
@@ -51,9 +61,27 @@ darkToggle.addEventListener("click", () => {
   darkToggle.checked ? html.classList.add("dark") || (localStorage.theme = "dark") : html.classList.remove("dark") || (localStorage.theme = "light");
 });
 
-// Set the toggle position according to the mode
+/**
+ * Set the toggle position according to the mode
+ */
 if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
   darkToggle.checked = true;
 } else {
   darkToggle.checked = false;
 }
+
+/**
+ * Animation on scroll
+ */
+function aos_init() {
+  AOS.init({
+    duration: 1000,
+    offset: 250,
+    easing: "ease-in-out",
+    once: true,
+    mirror: false,
+  });
+}
+window.addEventListener("load", () => {
+  aos_init();
+});
