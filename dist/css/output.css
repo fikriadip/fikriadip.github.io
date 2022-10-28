@@ -1221,6 +1221,26 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.grayscale {
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.grayscale-\[50\%\] {
+  --tw-grayscale: grayscale(50%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.grayscale-\[20\%\] {
+  --tw-grayscale: grayscale(20%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.grayscale-\[100\%\] {
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition {
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1255,6 +1275,10 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
 .navbar-fixed {
   position: fixed;
   z-index: 9999;
@@ -1273,6 +1297,10 @@ body {
 .navbar-fixed {
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
 }
+
+/*--------------------------------------------------------------
+# Hamburger Menu
+--------------------------------------------------------------*/
 
 .hamburger-line {
   margin-top: 0.5rem;
@@ -1307,6 +1335,10 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+/*--------------------------------------------------------------
+# Description Portfolio Active
+--------------------------------------------------------------*/
+
 .description-active {
   top: 0px;
   --tw-bg-opacity: 1;
@@ -1321,24 +1353,30 @@ body {
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
+/*--------------------------------------------------------------
+# Dark Toogle
+--------------------------------------------------------------*/
+
 #dark-toggle:checked ~ label div.toggle-circle {
   --tw-translate-x: 0.75rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+/*--------------------------------------------------------------
+# Custom Scrollbar
+--------------------------------------------------------------*/
+
 .scrollbar::-webkit-scrollbar {
-  height: 0.5rem;
-  width: 0.5rem;
-  background-color: transparent;
+  width: 5px;
 }
 
-.scrollbar::-webkit-scrollbar-track-piece {
-  display: none;
-  background-color: transparent;
+.scrollbar::-webkit-scrollbar-track {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 241 241 / var(--tw-bg-opacity));
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
-  border-radius: 100vh;
+  height: 172px;
   --tw-bg-opacity: 1;
   background-color: rgb(24 210 110 / var(--tw-bg-opacity));
 }
@@ -1348,44 +1386,44 @@ body {
   background-color: rgb(0 160 74 / var(--tw-bg-opacity));
 }
 
-.selection\:bg-fuchsia-500 *::-moz-selection {
+.selection\:bg-primary *::-moz-selection {
   --tw-bg-opacity: 1;
-  background-color: rgb(217 70 239 / var(--tw-bg-opacity));
+  background-color: rgb(24 210 110 / var(--tw-bg-opacity));
 }
 
-.selection\:bg-fuchsia-500 *::selection {
+.selection\:bg-primary *::selection {
   --tw-bg-opacity: 1;
-  background-color: rgb(217 70 239 / var(--tw-bg-opacity));
+  background-color: rgb(24 210 110 / var(--tw-bg-opacity));
 }
 
-.selection\:text-white *::-moz-selection {
+.selection\:text-dark *::-moz-selection {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
-.selection\:text-white *::selection {
+.selection\:text-dark *::selection {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
-.selection\:bg-fuchsia-500::-moz-selection {
+.selection\:bg-primary::-moz-selection {
   --tw-bg-opacity: 1;
-  background-color: rgb(217 70 239 / var(--tw-bg-opacity));
+  background-color: rgb(24 210 110 / var(--tw-bg-opacity));
 }
 
-.selection\:bg-fuchsia-500::selection {
+.selection\:bg-primary::selection {
   --tw-bg-opacity: 1;
-  background-color: rgb(217 70 239 / var(--tw-bg-opacity));
+  background-color: rgb(24 210 110 / var(--tw-bg-opacity));
 }
 
-.selection\:text-white::-moz-selection {
+.selection\:text-dark::-moz-selection {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
-.selection\:text-white::selection {
+.selection\:text-dark::selection {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 .hover\:-translate-y-2:hover {
@@ -1441,8 +1479,8 @@ body {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.focus\:border-b-\[3px\]:focus {
-  border-bottom-width: 3px;
+.focus\:border-b-4:focus {
+  border-bottom-width: 4px;
 }
 
 .focus\:border-b-primary:focus {
@@ -1639,24 +1677,8 @@ body {
     display: none;
   }
 
-  .lg\:h-\[250px\] {
-    height: 250px;
-  }
-
   .lg\:h-\[220px\] {
     height: 220px;
-  }
-
-  .lg\:h-\[215px\] {
-    height: 215px;
-  }
-
-  .lg\:h-\[225px\] {
-    height: 225px;
-  }
-
-  .lg\:h-\[230px\] {
-    height: 230px;
   }
 
   .lg\:w-1\/2 {
