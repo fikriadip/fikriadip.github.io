@@ -8,6 +8,9 @@ module.exports = {
       padding: "16px",
     },
     extend: {
+      fontFamily: {
+        rubik: ["Rubik", "sans-serif"],
+      },
       colors: {
         primary: "#18d26e",
         secondary: "#64748b",

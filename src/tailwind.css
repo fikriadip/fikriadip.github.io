@@ -3,7 +3,98 @@
 @tailwind utilities;
 
 body {
-  font-family: "Rubik", sans-serif;
+  @apply font-rubik;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+.preloader {
+  @apply fixed top-0 z-[9999999] mt-0 h-full w-full bg-slate-100 dark:bg-dark;
+}
+
+.preloader-center {
+  @apply relative h-full w-full;
+}
+
+.preloader-center-absolute {
+  @apply absolute left-1/2 top-1/2 -mt-[10px] -ml-[50px] h-5 w-[100px];
+}
+
+.object {
+  @apply absolute mr-5 mb-5 h-5 w-5 rounded-full bg-primary;
+}
+
+.object_one {
+  @apply animate-[object_2s_linear_infinite];
+}
+
+.object_two {
+  @apply left-5 animate-[object_2s_linear_infinite_-0.4s];
+}
+
+.object_three {
+  @apply left-10 animate-[object_2s_linear_infinite_-0.8s];
+}
+
+.object_four {
+  @apply left-[60px] animate-[object_2s_linear_infinite_-1.2s];
+}
+
+.object_five {
+  @apply left-20 animate-[object_2s_linear_infinite_-1.6s];
+}
+
+@-webkit-keyframes object {
+  0% {
+    @apply left-[100px] top-0;
+  }
+
+  80% {
+    @apply left-0 top-0;
+  }
+
+  85% {
+    @apply left-0 -top-5 h-5 w-5;
+  }
+
+  90% {
+    @apply h-[15px] w-10;
+  }
+
+  95% {
+    @apply left-[100px] -top-5 h-5 w-5;
+  }
+
+  100% {
+    @apply left-[100px] top-0;
+  }
+}
+
+@keyframes object {
+  0% {
+    @apply left-[100px] top-0;
+  }
+
+  80% {
+    @apply left-0 top-0;
+  }
+
+  85% {
+    @apply left-0 -top-5 h-5 w-5;
+  }
+
+  90% {
+    @apply h-[15px] w-10;
+  }
+
+  95% {
+    @apply left-[100px] -top-5 h-5 w-5;
+  }
+
+  100% {
+    @apply left-[100px] top-0;
+  }
 }
 
 /*--------------------------------------------------------------

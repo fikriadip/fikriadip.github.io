@@ -6,21 +6,22 @@
     <meta name="description" content="Full Stack Web Developer" />
     <meta name="keywords" content="resume,cv,Muhammad Fikri" />
     <meta name="author" content="Muhammad Fikri Adi Prasetyo" />
-    <!-- <meta name="theme-color" content="#8700f5" /> -->
     <meta name="theme-color" content="#18d26f" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dist/css/output.css" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <!-- Aos Animate -->
-    <link rel="stylesheet" href="vendor/aos/aos.css" />
     <!-- Box Icons -->
     <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <!-- My Style -->
+    <link rel="stylesheet" href="dist/css/output.css" />
+    <!-- Aos Animate -->
+    <link rel="stylesheet" href="vendor/aos/aos.css" />
+    <!-- Favicon -->
     <link type="image/x-icon" rel="shortcut icon" href="dist/img/icon/favicon.ico" />
     <!-- Title -->
-    <title>Portfolio - Muhammad Fikri</title>
+    <title>My Portfolio - Muhammad Fikri</title>
     <!-- Dark Mode with localStorage -->
     <script>
       if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
@@ -32,6 +33,20 @@
   </head>
 
   <body class="selection:bg-primary selection:text-dark">
+    <!-- PRELOADER START -->
+    <div class="preloader">
+      <div class="preloader-center">
+        <div class="preloader-center-absolute">
+          <div class="object object_one"></div>
+          <div class="object object_two"></div>
+          <div class="object object_three"></div>
+          <div class="object object_four"></div>
+          <div class="object object_five"></div>
+        </div>
+      </div>
+    </div>
+    <!-- END PRELOADER -->
+
     <!-- HEADER START -->
     <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
       <div class="container">
@@ -86,7 +101,7 @@
             <h2 class="mb-5 text-lg font-medium text-secondary dark:text-tertiary lg:text-2xl">Programmer | Content Creator</h2>
             <p class="mb-10 font-medium text-secondary dark:text-tertiary">Lifelong learning and Enjoy doing new things. <span class="font-bold text-dark dark:text-white">Keep Learning</span></p>
 
-            <a href="#" class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">My Resume</a>
+            <a href="https://fikriadip.github.io/resume" class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg" target="_blank">My Resume</a>
           </div>
 
           <div class="w-full self-end px-4 lg:w-1/2" data-aos="zoom-in">
@@ -177,7 +192,7 @@
     </section>
     <!-- END ABOUT SECTION -->
 
-    <!-- SERVICES SECTION START -->
+    <!-- SERVICE SECTION START -->
     <section id="services" class="bg-slate-100 pt-36 pb-32 dark:bg-slate-800">
       <div class="container">
         <div class="w-full px-4" data-aos="fade-up">
@@ -187,44 +202,38 @@
           </div>
         </div>
 
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 sm:w-1/2 lg:w-1/3 xl:w-1/3" data-aos="fade-up">
-            <div class="mb-10 rounded-3xl bg-indigo-500 text-center shadow-lg transition-all duration-300 ease-in-out hover:-translate-y-2">
-              <div class="flex justify-center pt-6">
-                <img src="dist/img/services/service-web.svg" alt="Random" />
-              </div>
-              <div class="py-7 px-6">
-                <h3 class="mb-3 text-xl font-semibold text-white">Web Development</h3>
-                <p class="text-base text-slate-50">Creating and developing modern websites and ready to use that will help you in marketing your products and services.</p>
-              </div>
+        <div class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
+          <div class="group rounded bg-white px-8 py-12 shadow hover:bg-primary dark:bg-slate-100 dark:hover:bg-primary" data-aos="fade-up">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <img src="./dist/img/services/service-web.svg" alt="Development icon" />
+            </div>
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-white lg:text-xl">Web Development</h3>
+              <p class="pt-4 text-sm text-dark group-hover:text-white md:text-base">Creating and developing modern websites and ready to use that will help you in marketing your products and services.</p>
             </div>
           </div>
-          <div class="w-full px-4 sm:w-1/2 lg:w-1/3 xl:w-1/3" data-aos="fade-down">
-            <div class="mb-10 rounded-3xl bg-rose-500 text-center shadow-lg transition-all duration-300 ease-in-out hover:-translate-y-2">
-              <div class="flex justify-center pt-6">
-                <img src="dist/img/services/service-design.svg" alt="Random" />
-              </div>
-              <div class="py-7 px-6">
-                <h3 class="mb-3 text-xl font-semibold text-white">Web Design</h3>
-                <p class="text-base text-slate-50">Make the website look attractive, easy to use and understandable by everyone when it becomes a website</p>
-              </div>
+          <div class="group rounded bg-white px-8 py-12 shadow hover:bg-primary dark:bg-slate-100 dark:hover:bg-primary" data-aos="fade-up">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <img src="./dist/img/services/service-design.svg" alt="Development icon" />
+            </div>
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-white lg:text-xl">Web Design</h3>
+              <p class="pt-4 text-sm text-dark group-hover:text-white md:text-base">Make the website look attractive, easy to use and understandable by everyone when it becomes a website</p>
             </div>
           </div>
-          <div class="w-full px-4 sm:w-1/2 lg:w-1/3 xl:w-1/3" data-aos="fade-up">
-            <div class="mb-10 rounded-3xl bg-cyan-500 text-center shadow-lg transition-all duration-300 ease-in-out hover:-translate-y-2">
-              <div class="flex justify-center pt-6">
-                <img src="dist/img/services/service-photography.svg" alt="Random" />
-              </div>
-              <div class="py-7 px-6">
-                <h3 class="mb-3 text-xl font-semibold text-white">Photography</h3>
-                <p class="text-base text-slate-50">I will guide you with posing and I never miss the important moments for capturing your special moments</p>
-              </div>
+          <div class="group rounded bg-white px-8 py-12 shadow hover:bg-primary dark:bg-slate-100 dark:hover:bg-primary" data-aos="fade-up">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <img src="./dist/img/services/service-photography.svg" alt="Development icon" />
+            </div>
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-white lg:text-xl">Photography</h3>
+              <p class="pt-4 text-sm text-dark group-hover:text-white md:text-base">I will guide you with posing and I never miss the important moments for capturing your special moments</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- END SERVICES SECTION -->
+    <!-- END SERVICE SECTION -->
 
     <!-- EXPERIENCE SECTION START -->
     <section id="experience" class="pt-36 pb-32 dark:bg-dark">
@@ -237,13 +246,13 @@
         </div>
 
         <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
-          <span class="absolute inset-y-0 left-1/4 hidden w-0.5 bg-secondary dark:bg-tertiary md:ml-[150px] md:block lg:ml-[138px] xl:ml-[168px]" data-aos="fade-down"></span>
+          <span class="absolute inset-y-0 left-1/4 hidden w-0.5 bg-secondary dark:bg-tertiary md:ml-[150px] md:block lg:ml-[138px] xl:ml-[164px] 2xl:ml-[168px]" data-aos="fade-down"></span>
 
           <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
             <div class="md:w-2/5" data-aos="fade-up">
               <div class="flex justify-center md:justify-start">
                 <span class="shrink-0">
-                  <img src="dist/img/experience/code.webp" class="h-auto w-32" alt="company logo" />
+                  <img src="dist/img/experience/primago.png" class="h-auto w-auto" alt="company logo" />
                 </span>
                 <div class="relative ml-3 hidden w-full md:block">
                   <span class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-slate-300 dark:bg-tertiary"></span>
@@ -288,7 +297,7 @@
                     <span class="font-body block font-bold text-secondary dark:text-tertiary">Nov 2019</span>
                     <span class="font-header block pt-2 text-xl font-bold uppercase text-primary">Company Visit</span>
                     <div class="pt-2">
-                      <span class="font-body block text-dark dark:text-white">When I was in school I made industrial visits to companies engaged in the technology industry.</span>
+                      <span class="font-body block text-dark dark:text-white">When I was in school I made industrial visits to company engaged in the technology industry.</span>
                     </div>
                   </div>
                 </div>
@@ -313,11 +322,23 @@
 
         <div id="projects" class="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 lg:flex lg:w-full lg:grid-cols-2 lg:flex-wrap lg:justify-center lg:gap-x-5 xl:grid-cols-3">
           <span class="mx-auto transform overflow-hidden rounded-lg shadow transition-all duration-200 ease-in-out hover:scale-105 md:mx-0" data-aos="zoom-in">
-            <img src="dist/img/project/wafi.jpeg" class="w-full rounded-lg lg:h-[220px] xl:w-[378px]" alt="Portfolio Image" />
+            <img src="dist/img/project/fina.png" class="w-full rounded-lg lg:h-[220px] xl:w-[385px]" alt="Portfolio Image" />
+            <div class="description absolute top-96 flex h-full w-full items-center justify-center rounded-lg transition-all duration-200 ease-in-out">
+              <div class="text-center">
+                <h2 class="text-xl font-bold text-white dark:text-dark">Fina Portfolio Tailwind CSS</h2>
+                <p class="text-base font-medium text-tertiary dark:text-secondary">Fina is a Portfolio HTML Template made with Tailwind CSS.</p>
+                <a href="https://fikriadip.github.io/fina-portfolio-tailwind-css/" target="_blank">
+                  <i class="bx bx-link-external mt-3 text-2xl text-white dark:text-dark"></i>
+                </a>
+              </div>
+            </div>
+          </span>
+          <span class="mx-auto transform overflow-hidden rounded-lg shadow transition-all duration-200 ease-in-out hover:scale-105 md:mx-0" data-aos="zoom-in">
+            <img src="dist/img/project/wafi.jpeg" class="w-full rounded-lg lg:h-[220px] xl:w-[385px]" alt="Portfolio Image" />
             <div class="description absolute top-96 flex h-full w-full items-center justify-center rounded-lg transition-all duration-200 ease-in-out">
               <div class="text-center">
                 <h2 class="text-xl font-bold text-white dark:text-dark">Wafi Company Profile</h2>
-                <p class="text-base font-medium text-tertiary dark:text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="text-base font-medium text-tertiary dark:text-secondary">Wafi Company Profile website responsive template made with Materialize CSS.</p>
                 <a href="https://fikriadip.github.io/wafi-company-profile/" target="_blank">
                   <i class="bx bx-link-external mt-3 text-2xl text-white dark:text-dark"></i>
                 </a>
@@ -325,11 +346,11 @@
             </div>
           </span>
           <span class="mx-auto transform overflow-hidden rounded-lg shadow transition-all duration-200 ease-in-out hover:scale-105 md:mx-0" data-aos="zoom-in">
-            <img src="dist/img/project/primago.jpeg" class="w-full rounded-lg lg:h-[220px] xl:w-[378px]" alt="Portfolio Image" />
+            <img src="dist/img/project/primago.jpeg" class="w-full rounded-lg lg:h-[220px] xl:w-[385px]" alt="Portfolio Image" />
             <div class="description absolute top-96 flex h-full w-full items-center justify-center rounded-lg transition-all duration-200 ease-in-out">
               <div class="text-center">
-                <h2 class="text-xl font-bold text-white dark:text-dark">Company Profile Primago</h2>
-                <p class="text-base font-medium text-tertiary dark:text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <h2 class="text-xl font-bold text-white dark:text-dark">Company Profile PT Primago</h2>
+                <p class="text-base font-medium text-tertiary dark:text-secondary">Website application company profile for management content PT PRIMAGO</p>
                 <a href="https://bit.ly/3sqzCTw" target="_blank">
                   <i class="bx bx-link-external mt-3 text-2xl text-white dark:text-dark"></i>
                 </a>
@@ -337,11 +358,11 @@
             </div>
           </span>
           <span class="mx-auto transform overflow-hidden rounded-lg shadow transition-all duration-200 ease-in-out hover:scale-105 md:mx-0" data-aos="zoom-in">
-            <img src="dist/img/project/laporin.jpeg" class="w-full rounded-lg lg:h-[220px] xl:w-[378px]" alt="Portfolio Image" />
+            <img src="dist/img/project/laporin.jpeg" class="w-full rounded-lg lg:h-[220px] xl:w-[385px]" alt="Portfolio Image" />
             <div class="description absolute top-96 flex h-full w-full items-center justify-center rounded-lg transition-all duration-200 ease-in-out">
               <div class="text-center">
                 <h2 class="text-xl font-bold text-white dark:text-dark">Laporin</h2>
-                <p class="text-base font-medium text-tertiary dark:text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="text-base font-medium text-tertiary dark:text-secondary">Website application for public complaint reporting and managing complaint reporting.</p>
                 <a href="https://bit.ly/3D6nImU" target="_blank">
                   <i class="bx bx-link-external mt-3 text-2xl text-white dark:text-dark"></i>
                 </a>
@@ -349,11 +370,11 @@
             </div>
           </span>
           <span class="mx-auto transform overflow-hidden rounded-lg shadow transition-all duration-200 ease-in-out hover:scale-105 md:mx-0" data-aos="zoom-in">
-            <img src="dist/img/project/sarsbhak.jpeg" class="w-full rounded-lg lg:h-[220px] xl:w-[378px]" alt="Portfolio Image" />
+            <img src="dist/img/project/sarsbhak.jpeg" class="w-full rounded-lg lg:h-[220px] xl:w-[385px]" alt="Portfolio Image" />
             <div class="description absolute top-96 flex h-full w-full items-center justify-center rounded-lg transition-all duration-200 ease-in-out">
               <div class="text-center">
                 <h2 class="text-xl font-bold text-white dark:text-dark">SarsBhak</h2>
-                <p class="text-base font-medium text-tertiary dark:text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="text-base font-medium text-tertiary dark:text-secondary">Website application infrastructure a school agency review application.</p>
                 <a href="https://bit.ly/3z9ufvT" target="_blank">
                   <i class="bx bx-link-external mt-3 text-2xl text-white dark:text-dark"></i>
                 </a>
@@ -376,20 +397,39 @@
           </div>
         </div>
 
-        <form>
+        <form name="contact-form">
           <div class="w-full lg:mx-auto lg:w-2/3" data-aos="fade-down">
             <div class="mb-8 w-full px-4">
-              <input type="text" class="w-full bg-slate-100 p-3 text-dark focus:border-b-4 focus:border-b-primary focus:outline-none" placeholder="Enter Your Name" />
+              <input type="text" name="name" class="w-full bg-slate-100 p-3 text-dark focus:border-b-4 focus:border-b-primary focus:outline-none focus:invalid:border-b-red-600" placeholder="Enter Your Name" autocomplete="off" required />
             </div>
             <div class="mb-8 w-full px-4">
-              <input type="email" class="w-full bg-slate-100 p-3 text-dark focus:border-b-4 focus:border-b-primary focus:outline-none" placeholder="Enter Your Email" />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full bg-slate-100 p-3 text-dark invalid:text-red-600 focus:border-b-4 focus:border-b-primary focus:outline-none focus:invalid:border-b-red-600"
+                placeholder="Enter Your Email"
+                autocomplete="off"
+                required
+              />
             </div>
             <div class="mb-8 w-full px-4">
-              <textarea type="text" class="h-32 w-full bg-slate-100 p-3 text-dark focus:border-b-4 focus:border-b-primary focus:outline-none" placeholder="Enter Your Message"></textarea>
+              <textarea
+                type="text"
+                name="message"
+                class="h-32 w-full bg-slate-100 p-3 text-dark focus:border-b-4 focus:border-b-primary focus:outline-none focus:invalid:border-b-red-600"
+                placeholder="Enter Your Message"
+                autocomplete="off"
+                required
+              ></textarea>
             </div>
 
             <div class="w-full px-4 text-center">
-              <button type="button" class="rounded-full bg-primary py-4 px-8 text-base font-semibold text-white transition duration-500 ease-in-out hover:opacity-80 hover:shadow-lg">Contact Me</button>
+              <button type="submit" class="btn-send rounded-full bg-primary py-4 px-8 text-base font-semibold text-white transition duration-500 ease-in-out hover:opacity-80 hover:shadow-lg">Contact Me</button>
+              <button type="button" class="btn-loading hidden rounded-full bg-primary py-4 px-8 text-base font-semibold text-white duration-[500ms,800ms] hover:cursor-not-allowed hover:opacity-80" disabled>
+                <svg role="status" class="mr-3 inline h-5 w-5 animate-spin rounded-full border-4 border-solid border-white border-t-transparent" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
+                Loading...
+              </button>
             </div>
           </div>
         </form>
@@ -484,6 +524,9 @@
 
     <!-- Jquery -->
     <script src="vendor/jquery/jquery-3.6.1.min.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="vendor/sweetalert2/sweetalert2.min.js"></script>
 
     <!-- Aos Animate -->
     <script src="vendor/aos/aos.js"></script>
